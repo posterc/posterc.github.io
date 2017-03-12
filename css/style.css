@@ -1,0 +1,103 @@
+nav ul, footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.doc-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.doc-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.anchorplus {
+    color: inherit;  
+}
+
+.tech {
+    display: inline-block;
+    max-width:100px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+
+blockquote {
+    font: italic 11px/30px sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    padding-left: 12px;
+    border-left: 2px solid #ccc;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.thumbnail {
+  max-width: 40%;
+}
+
+.pthumbnail {
+  max-width: 20%;
+  margin: 0 10px;
+}
+
+img .pthumbnail {
+
+}
+
+.lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+    /** Pad the lightbox image */
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+}
+
+.lb {
+    height: 50%;
+}
+
+.lightbox:target {
+    /** Remove default browser outline */
+    outline: none;
+
+    /** Unhide lightbox **/
+    display: block;
+}
+
+.mini-hr{
+    margin: auto;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 50%;
+}
