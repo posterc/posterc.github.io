@@ -1,2 +1,3 @@
-	name: Akmal Hakim, Engineer Programmer
+	name: Akmal Hakim
 	markdown: kramdown
+	permalink: /blog/:year/:month/:day/:title
